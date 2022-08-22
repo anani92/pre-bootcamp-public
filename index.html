@@ -1,0 +1,37 @@
+<html>
+	<link rel="stylesheet" href="./index.css">
+<body>
+	<div id="world">
+        <div class="ninja-man"></div>
+    </div>
+    <script type="text/javascript">
+	        var world = [
+				[1,1,1,1,1,1,1],
+				[1,0,1,1,2,0,1],
+				[1,0,2,0,1,2,1],
+				[1,0,1,2,0,0,1],
+				[1,0,1,1,2,0,1],
+				[1,0,2,0,1,2,1],
+				[1,0,1,2,0,2,1],
+				[1,1,1,1,1,1,1]
+			];
+			var worldDic = {
+				0: 'blank',
+				1: 'wall',
+				2: 'sushi'
+			}
+			function drawWord() {
+				var output = '';
+				for (var row = 0; row < world.length; row++) {
+					output += '<div class="row">';
+					for(var x=0; x < world[row].lenght; i++){
+						output += `<div class=${worldDic[world[row[x]]]}></div>`
+					}
+					output += '</div>';
+				}
+				document.getElementById('world').innerHTML= output;
+			}
+			drawWord()
+    </script>
+</body>
+</html>
