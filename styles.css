@@ -1,0 +1,22 @@
+.header {
+	background-color: black;
+	color: white;
+	font-size: 1.7rem;
+	padding: .5rem;
+
+}
+.header span {
+	color: rgb(74, 221, 221);
+}
+
+.complete {
+	color: #fafafa;
+	background-color: purple;
+	padding: .5rem;
+	font-size: 1.2rem;
+}
+
+.teal {
+	background-color: rgb(74, 221, 221);;
+	padding: 3rem;
+}
